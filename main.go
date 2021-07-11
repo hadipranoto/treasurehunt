@@ -11,8 +11,9 @@ func main (){
 	
 	
 	player := algo.Positions{
-		UserPosition: []int{5, 5},
-		TreasurePosition: []int{2, 3},				
+		UserPosition: []int{1, 1},
+		TreasurePosition: []int{3, 4},
+		Distance: 99,
 	}
 	nucleus := algo.Nucleus{Player: &player}
 
@@ -21,7 +22,7 @@ func main (){
 		message := "#######################################################\n" +
 		"# A treasure has been hidden at a location in a 8x6   #\n" +
 		"# Guess where it is using [W, S, A, D] as arrow       #\n" +
-		"# Author : Hadi 								       #\n" +
+		"# Author : Hadi					      #\n" +
 		"#######################################################";
 		fmt.Println(message)
 
